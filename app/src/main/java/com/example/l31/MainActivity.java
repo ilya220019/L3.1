@@ -35,10 +35,10 @@ public class MainActivity extends AppCompatActivity {
                         email.putExtra(Intent.EXTRA_SUBJECT, subject1);
                         email.putExtra(Intent.EXTRA_TEXT, message);
 
-                        //для того чтобы запросить email клиент устанавливаем тип
+
                         email.setType("message/rfc822");
 
-                        startActivity(Intent.createChooser(email, "Выберите email клиент :"));
+                        startActivity(Intent.createChooser(email, "Через что открыть"));
 
                     });
     }}
